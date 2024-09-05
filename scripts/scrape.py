@@ -94,3 +94,5 @@ for property_url in pbar:
 # output to example json in data/raw/
 with open('../data/raw/example.json', 'w') as f:
     dump(property_metadata, f)
+#test trial 
+print("hello world")
