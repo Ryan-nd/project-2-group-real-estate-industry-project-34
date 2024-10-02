@@ -57,7 +57,7 @@
 **Utilized random forest**:
   - Ran hyperparameter tuning multiple times using different samples, then tried certain sets that produced higher RMSE on the full training and validation set
   - Experimented with RFE and feature selection, but resulted in worse results and since features were not too many, we decided to use all the features
-  - 
+  - ![plot](./Feature_importance.png)
 
 
 ---
