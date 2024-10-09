@@ -144,3 +144,13 @@ data/landing/
 *.csv
 
 *.xlsx
+
+# Ignore PNG files
+*.png
+
+# Ignore SHP and related shapefiles
+*.shp
+*.shx
+*.prj
+*.cpg
+*.dbf
