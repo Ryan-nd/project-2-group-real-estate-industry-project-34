@@ -138,3 +138,9 @@ data/landing/
 
 # Exclude all JSON files
 *.json
+
+*.parquet
+
+*.csv
+
+*.xlsx
