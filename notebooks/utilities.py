@@ -1,12 +1,21 @@
 from geopy.geocoders import GoogleV3
 from shapely.geometry import Point
+from dotenv import load_dotenv
+import os
+
+# Load environment variables from the .env file
+load_dotenv()
+
+# Get the API key from the environment variable
+google_api_key = os.getenv('GOOGLE_API_KEY')
+
 
 def get_coordinates(address):
     """
     This function takes a string address and returns its latitude and longitude as a tuple.
     If the address is not found, it returns None.
     """
-    geolocator = GoogleV3(api_key='AIzaSyCxPeorpJ909QjM5lMADVIl0_sIhpcdo-g')  # Replace with your API key
+    geolocator = GoogleV3(api_key=google_api_key)  # Replace with your API key
     location = geolocator.geocode(address, timeout=10)
 
     if location:
