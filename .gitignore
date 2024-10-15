@@ -135,3 +135,22 @@ data/landing/
 
 # OSX .DS_Store file
 .DS_Store
+
+# Exclude all JSON files
+*.json
+
+*.parquet
+
+*.csv
+
+*.xlsx
+
+# Ignore PNG files
+*.png
+
+# Ignore SHP and related shapefiles
+*.shp
+*.shx
+*.prj
+*.cpg
+*.dbf
